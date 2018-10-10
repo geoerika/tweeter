@@ -5,14 +5,32 @@
  */
 html {
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.container {
+  z-index: 0;
+  width: 450px;
+  background-color: white;
+  font-size: 20px;
+  color: black;
+  margin: 80px auto 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-/*
- * Global layout stuff
- */
+.tweet-container {
+  z-index: 2;
+  width: 430px;
+  height: 40px;
+  background-color: yellow;
+  font-size: 20px;
+  color: black;
+  margin: 5px 0 50px 0.5em;
+  /*margin: 50px auto 0 auto;*/
+}
 
 body {
   margin: 0;

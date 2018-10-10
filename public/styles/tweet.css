@@ -1,0 +1,47 @@
+.tweet {
+  z-index: 2;
+  width: 430px;
+  height: 150px;
+  font-size: 20px;
+  color: black;
+  margin: 5px 0 5px 0.5em;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 4%;
+  border-width: 1px;
+}
+
+section.tweet article header {
+  display: inline;
+  background-color: lightgrey;
+  color: green;
+  margin-left:10px;
+}
+
+section.tweet article h2 {
+  display: inline;
+  font-weight: bold;
+  font-size: 120%;
+  margin-left: 10px;
+}
+
+section.tweet article span {
+  display: inline;
+  float: right;
+  align-content: right;
+  margin: 0 10px 0 10px;
+  line-height: 30px;
+  font-size: 80%;
+  margin-left: 10px;
+  color: blue;
+}
+
+section.tweet article div {
+  margin-left: 10px;
+}
+
+section.tweet footer {
+  position: bottom-left;
+  font-size: 60%;
+  margin: 50px 0 0 0px;
+}
