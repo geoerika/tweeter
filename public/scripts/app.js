@@ -33,7 +33,6 @@ const renderTweets = (data) => {      //collects all the tweets in the database
 
   data.forEach(tweetData => {
     let $tweet = createTweetElement(tweetData);
-    console.log("tweet: ", $tweet);
     $('#tweets-container').prepend($tweet);
   });
   return $('#tweets-container');
@@ -47,11 +46,25 @@ const loadTweets = () => {
   })
 };
 
+let clickVar = true;
+
+const tweetSlide = () => {
+
+  loadTweets();
+
+  $('#compose').click(
+      function() {
+        $('.new-tweet').slideToggle();
+        $('#text-area').focus();
+      }
+  )
+};
+
 // Test / driver code (temporary)
 $(document).ready(function() {
 
 
-  loadTweets();
+  tweetSlide();
 
 });
 
