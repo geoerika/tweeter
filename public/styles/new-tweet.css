@@ -43,6 +43,11 @@
   font-size: 80%;
 }
 
-.redColour {
+.new-tweet .errorMessage {
+  display: none;
+  float: center;
+  line-height: 30px;
+  font-size: 80%;
+  font-weight: bold;
   color: red;
 }
