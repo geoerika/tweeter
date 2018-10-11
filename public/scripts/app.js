@@ -14,7 +14,8 @@ const createTweetElement = (tweet) => {             //creates a html tweet eleme
 
   let header = $("<header>").append(avatar, h2Header, spanHeader);
 
-  let tweetDiv = $(`<p>"${tweet.content.text}"</p>`);
+  let tweetContent = tweet.content.text;
+  let tweetDiv = $("<p>").text(tweetContent);   //fixes Cross-Site Scripting using text()
 
   let divTweet = $("<div>").append(tweetDiv);
 
@@ -33,20 +34,22 @@ const renderTweets = (data) => {      //collects all the tweets in the database
   data.forEach(tweetData => {
     let $tweet = createTweetElement(tweetData);
     console.log("tweet: ", $tweet);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   });
   return $('#tweets-container');
 }
 
+const loadTweets = () => {
+
+  $.ajax('/tweets', {method: 'GET'})
+  .then(function(tweets) {
+    return renderTweets(tweets);
+  })
+};
+
 // Test / driver code (temporary)
 $(document).ready(function() {
 
-  const loadTweets = () => {
-    $.ajax('/tweets', {method: 'GET'})
-    .then(function(tweets) {
-      return renderTweets(tweets);
-    })
-  }
 
   loadTweets();
 
