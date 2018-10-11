@@ -23,3 +23,16 @@
   padding-right: 10px;
   align-content: center;
 }
+
+#compose {
+  float: right;
+  margin-top: 25px;
+  margin-right: 170px;
+  font-size: 120%;
+  background-color: lightgreen;
+  color: green;
+}
+
+#compose:hover {
+  background-color: white;
+}

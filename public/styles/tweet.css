@@ -1,7 +1,7 @@
 .tweet {
   z-index: 2;
   width: 430px;
-  height: 150px;
+  height: 200px;
   font-size: 20px;
   color: black;
   margin: 5px 0 5px 0.5em;
@@ -11,21 +11,21 @@
   border-width: 1px;
 }
 
-section.tweet article header {
+.tweet article header {
   display: inline;
+  width: 430;
   background-color: lightgrey;
   color: green;
-  margin-left:10px;
+  margin-left: 0;
 }
 
-section.tweet article h2 {
+.tweet article h2 {
   display: inline;
-  font-weight: bold;
   font-size: 120%;
   margin-left: 10px;
 }
 
-section.tweet article span {
+.tweet article span {
   display: inline;
   float: right;
   align-content: right;
@@ -36,12 +36,13 @@ section.tweet article span {
   color: blue;
 }
 
-section.tweet article div {
+.tweet article div {
   margin-left: 10px;
 }
 
-section.tweet footer {
-  position: bottom-left;
+.tweet footer div {
+  float: bottom-left;
   font-size: 60%;
-  margin: 50px 0 0 0px;
+  margin: 0 0 50px 0px;
+  color: blue;
 }
