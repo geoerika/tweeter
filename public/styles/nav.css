@@ -1,3 +1,5 @@
+/*nav bar css*/
+
 #nav-bar {
   position: fixed;
   top: 0;
@@ -11,7 +13,6 @@
 
 #nav-bar .header {
   float: left;
-  align-content: center;
   font-size: 200%;
   line-height: 75px;
 }
@@ -21,18 +22,25 @@
   width: 80px;
   float: left;
   padding-right: 10px;
-  align-content: center;
+  margin-left: 15vw;
 }
 
 #compose {
   float: right;
-  margin-top: 25px;
-  margin-right: 170px;
+  margin-top: 18px;
+  margin-right: 20vw;
+  position: relative;
+  align-items: center;
+  height: 50px;
+  border-radius: 10%;
   font-size: 120%;
-  background-color: lightgreen;
-  color: green;
+  background-color: #00cc66;
+  color: #006633;
+  font-weight: bold;
+
 }
 
+/*pseudo-class hover attached to compose button*/
 #compose:hover {
   background-color: white;
 }

@@ -12,6 +12,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
+    <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
     <!-- New-Tweet CSS -->
@@ -34,6 +35,9 @@
 
     <!-- Validate Form JS -->
     <script type="text/javascript" src="/scripts/validate-form.js"></script>
+
+    <!-- IOICON link JS -->
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
   </head>
 
   <body>
@@ -53,28 +57,11 @@
             <textarea id="text-area" name="text" autofocus="autofocus" placeholder="What are you humming about?"></textarea>
             <input id="tweet" type="submit" value="Tweet">
             <span id= "counter" class="counter">140</span>
-            <span id="errorMessage" class="errorMessage">Error</span>
+            <span id="errorMessage" class="errorMessage"></span>
         </form>
       </section>
       <section id="tweets-container" class="tweet">
-        <!-- <article>
-          <header>
-              <img>avatar</img>
-              <h2>Name</h2>
-              <span>@Name</span>
-          </header>
-            <div>
-              <p>Tweet</p>
-            </div>
-          <footer>
-            <div>
-              <p>10 days ago</p>
-              <span id= "icons">Icons</span>
-            </div>
-          </footer>
-        </article> -->
       </section>
-
     </main>
 
   </body>

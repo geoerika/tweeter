@@ -1,48 +1,89 @@
-.tweet {
-  z-index: 2;
-  width: 430px;
-  height: 200px;
+/*tweets-container html*/
+
+#tweets-container {
+  margin: 20px 0 0 0;
+}
+
+.tweet article {
+  min-height: 100px;
   font-size: 20px;
   color: black;
-  margin: 5px 0 5px 0.5em;
+  margin: 10px 2em 0 2em;
   border-style: solid;
   border-color: lightgrey;
   border-radius: 4%;
   border-width: 1px;
+  overflow: hidden;
 }
 
 .tweet article header {
-  display: inline;
-  width: 430;
-  background-color: lightgrey;
-  color: green;
-  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #eee;
+  color: darkslategrey;
 }
 
-.tweet article h2 {
+
+.tweet .userName {
   display: inline;
-  font-size: 120%;
-  margin-left: 10px;
+  font-size: 110%;
+  margin: 8px 90px 0 10px;
+  width: 200px;
 }
 
-.tweet article span {
+.tweet article header img {
   display: inline;
-  float: right;
+  margin: 10px 0 10px 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.tweet article header span {
+  display: inline;
   align-content: right;
   margin: 0 10px 0 10px;
   line-height: 30px;
-  font-size: 80%;
+  font-size: 70%;
   margin-left: 10px;
-  color: blue;
+  color: darkslategray;
 }
 
 .tweet article div {
   margin-left: 10px;
+  margin-right: 10px;
+  width:340px;
+  border: none;
+  padding: none;
 }
 
-.tweet footer div {
-  float: bottom-left;
+/*word-wrap allows breaking the text into new lines so it doesn't overflow the html element */
+.tweet article div p {
+  word-wrap: break-word;
+  font-size: 80%;
+}
+
+.tweet footer {
+  float: bottom-center;
   font-size: 60%;
-  margin: 0 0 50px 0px;
-  color: blue;
+  margin: 10px 0 0 0;
+  border-top-style: solid;
+  border-top-color: lightgray;
+  border-top-width: 1px;
+  height: 30px;
+}
+
+.tweet footer #time {
+  float: left;
+  display: inline;
+  margin: 7px 0 0 0;
+  color: darkgrey;
+  font-weight: 2px;
+}
+
+.tweet footer .icons {
+  display: inline;
+  float: right;
+  margin: 7px 0 0 40px;
+  color: grey;
 }
