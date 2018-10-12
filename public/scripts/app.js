@@ -4,13 +4,18 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const daysAgoCalc = (created_at) => {
+
+  return Math.floor(Math.floor((Date.now() - created_at) / 1000 / 60 / 60 / 24));
+}
+
 const createTweetElement = (tweet) => {             //creates a html tweet element from tweet object
 
   let $tweet = $("<article>").addClass("tweet");
 
   let avatar = $(`<img src="${tweet.user.avatars.small}"></img>`);
-  let h2Header = $(`<h2>"${tweet.user.name}"</h2>`);
-  let spanHeader = $(`<span>"${tweet.user.handle}"</span>`);
+  let h2Header = $(`<h2>${tweet.user.name}</h2>`);
+  let spanHeader = $(`<span>${tweet.user.handle}</span>`);
 
   let header = $("<header>").append(avatar, h2Header, spanHeader);
 
@@ -19,10 +24,10 @@ const createTweetElement = (tweet) => {             //creates a html tweet eleme
 
   let divTweet = $("<div>").append(tweetDiv);
 
-  let timeFooter = $(`<p>"${tweet.created_at}"</p>`);
-  let spanFooter = $("<span id='icons'>Icons</span>");
+  let timeFooter = $(`<span id='time'>${daysAgoCalc(tweet.created_at)} days ago</span>`);
+  let iconFooter = $("<span id='icons'>Icons</span>");
 
-  let divFooter = $("<div>").append(timeFooter, spanFooter);
+  let divFooter = $("<div>").append(timeFooter, iconFooter);
 
   let footer = $("<footer>").append(divFooter);
 
