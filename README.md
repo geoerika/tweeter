@@ -10,12 +10,14 @@ Tweets are stored in MongoDB and survive a server restart
 
 ## Dependencies
 
-Body-parser
-Chance
-Express
-md5
-Mongodb
-Nodemon
+
+    Node.js
+    Express
+    body-parser
+    Chance
+    md5
+    MongoDB
+    Nodemon
 
 ## Getting Started
 
