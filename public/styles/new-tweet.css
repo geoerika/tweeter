@@ -1,4 +1,4 @@
-/*new tweet section html*/
+/*new tweet section css*/
 
 .new-tweet {
   z-index: 1;
@@ -12,10 +12,10 @@
 .new-tweet h2 {
   font-weight: bold;
   font-size: 120%;
-  align-content: left;
+  color: darkslategray;
   margin-left: 10px;
   width: 348px;
-  border-bottom-color: black;
+  border-bottom-color: darkslategray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }

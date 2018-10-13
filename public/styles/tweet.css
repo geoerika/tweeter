@@ -1,6 +1,7 @@
-/*tweets-container html*/
+/*tweets-container css*/
 
 #tweets-container {
+  z-index: 1;
   margin: 20px 0 0 0;
 }
 
@@ -37,6 +38,10 @@
   margin: 10px 0 10px 10px;
   height: 50px;
   width: 50px;
+  border-radius: 10%;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .tweet article header span {
@@ -77,7 +82,7 @@
   float: left;
   display: inline;
   margin: 7px 0 0 0;
-  color: darkgrey;
+  color: darkslategray;
   font-weight: 2px;
 }
 
@@ -85,5 +90,5 @@
   display: inline;
   float: right;
   margin: 7px 0 0 40px;
-  color: grey;
+  color: #00a087;
 }

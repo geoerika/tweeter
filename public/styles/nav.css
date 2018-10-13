@@ -1,6 +1,7 @@
 /*nav bar css*/
 
 #nav-bar {
+  z-index: 2;
   position: fixed;
   top: 0;
   height: 80px;
@@ -30,13 +31,18 @@
   margin-top: 18px;
   margin-right: 20vw;
   position: relative;
-  align-items: center;
   height: 50px;
   border-radius: 10%;
   font-size: 120%;
-  background-color: #00cc66;
+  background-color: #ccffcc;
+  background-image: url(../images/create.png);
+  background-repeat: no-repeat;
+  background-position: 5px 13px;
+  padding-left: 30px;
   color: #006633;
   font-weight: bold;
+  border-color: darkslategray;
+  border-width: 1px;
 
 }
 

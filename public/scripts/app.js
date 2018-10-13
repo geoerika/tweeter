@@ -26,7 +26,7 @@ const createTweetElement = (tweet) => {             //creates an html tweet elem
   let divTweet = $("<div>").append(tweetDiv);
 
   let timeFooter = $(`<span id='time'>${daysAgoCalc(tweet.created_at)} days ago</span>`);
-  let iconFooter = $("<span class='icons'><ion-icon name='flag'></ion-icon><ion-icon name='repeat'></ion-icon><ion-icon name='heart'></ion-icon></span>");
+  let iconFooter = $("<span class='icons'><ion-icon name='flag'></ion-icon> <ion-icon name='repeat'></ion-icon> <ion-icon name='heart'></ion-icon></span>");
 
   let divFooter = $("<div>").append(timeFooter, iconFooter);
 
