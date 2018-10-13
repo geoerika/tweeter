@@ -1,3 +1,5 @@
+/*new tweet section css*/
+
 .new-tweet {
   z-index: 1;
   height:165px;
@@ -5,28 +7,26 @@
   background-color: #eee;
   border: 1px solid lightgrey;
   border-radius: 3%;
-
 }
 
 .new-tweet h2 {
   font-weight: bold;
   font-size: 120%;
-  align-content: left;
+  color: darkslategray;
   margin-left: 10px;
   width: 348px;
-  border-bottom-color: black;
+  border-bottom-color: darkslategray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-
 }
 
 .new-tweet textarea {
   align-content: center;
-  width: 348px;
+  width: 346px;
   float: center;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 100%;
+  font-size: 80%;
 }
 
 .new-tweet input {
@@ -43,11 +43,17 @@
   font-size: 80%;
 }
 
+/*class invisible and called only when tweet is empty or longer than 140 characters*/
 .new-tweet .errorMessage {
   display: none;
   float: center;
   line-height: 30px;
   font-size: 80%;
   font-weight: bold;
+  color: red;
+}
+
+/*class attached to the span element counter when tweet text length is > 140*/
+.new-tweet .redColour {
   color: red;
 }
