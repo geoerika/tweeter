@@ -12,12 +12,14 @@
   padding-right: 2em;
 }
 
+/* css styling for "Tweeter" title */
 #nav-bar .header {
   float: left;
   font-size: 200%;
   line-height: 75px;
 }
 
+/* styling for logo image */
 #nav-bar .logo {
   height: 80px;
   width: 80px;
@@ -25,7 +27,7 @@
   padding-right: 10px;
   margin-left: 15vw;
 }
-
+/* compose button*/
 #compose {
   float: right;
   margin-top: 18px;
