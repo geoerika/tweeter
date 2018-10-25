@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-y: scroll; /*prevents the shifting of the html elements to the right on page refresh */
 }
 *, *:before, *:after {
   box-sizing: inherit;
