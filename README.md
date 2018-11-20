@@ -1,8 +1,8 @@
 # Tweeter Projectom
 
-Tweeter is a client-side Single Page App (SPA)
-It communicates with a server via AJAX
-Tweets are stored in MongoDB and survive a server restart
+Tweeter is a client-side Single Page App (SPA).
+It communicates with a server via AJAX.
+Tweets are stored in MongoDB and survive a server restart.
 
 ## Final Product
 !["Screenshot of Tweeter main page"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-main.png)
