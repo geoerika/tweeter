@@ -1,42 +1,44 @@
-/*new tweet section scss*/
-.new-tweet input, .new-tweet textarea {
-  margin-left: 10px;
-  font-size: 80%;
-}
+/*new tweet section css*/
 
 .new-tweet {
   z-index: 1;
-  height: 165px;
+  height:165px;
   margin: 15px 2em 0px 2em;
   background-color: #eee;
   border: 1px solid lightgrey;
   border-radius: 3%;
-  /* "Compose Tweet" title styling */
-  /* styling of tweet input text area */
-  /* styling for the submit tweet button */
-  /* styling for the character count shown to the right */
-  /*class invisible and called only when tweet is empty or longer than 140 characters*/
-  /*class attached to the span element counter when tweet text length is > 140*/
 }
+
+/* "Compose Tweet" title styling */
 .new-tweet h2 {
-  margin-left: 10px;
   font-weight: bold;
   font-size: 120%;
   color: darkslategray;
+  margin-left: 10px;
   width: 348px;
   border-bottom-color: darkslategray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
+
+/* styling of tweet input text area */
 .new-tweet textarea {
   align-content: center;
   width: 346px;
   float: center;
+  margin-left: 10px;
   margin-right: 10px;
+  font-size: 80%;
 }
+
+/* styling for the submit tweet button */
 .new-tweet input {
   float: bottom;
+  margin-left: 10px;
+  font-size: 80%;
 }
+
+/* styling for the character count shown to the right */
 .new-tweet span {
   float: right;
   align-content: right;
@@ -44,6 +46,8 @@
   line-height: 30px;
   font-size: 80%;
 }
+
+/*class invisible and called only when tweet is empty or longer than 140 characters*/
 .new-tweet .errorMessage {
   display: none;
   float: center;
@@ -53,8 +57,8 @@
   font-weight: bold;
   color: red;
 }
+
+/*class attached to the span element counter when tweet text length is > 140*/
 .new-tweet .redColour {
   color: red;
 }
-
-/*# sourceMappingURL=new-tweet.css.map */

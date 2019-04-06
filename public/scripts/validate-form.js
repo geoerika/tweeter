@@ -10,7 +10,7 @@ $(function() {
   // });
 
   $(".tweet-form").on('submit', function (event) {      //submits the new tweet to the database
-
+console.log("submit");
     event.preventDefault();       //prevents default "submit" event
 
     tweetText = $('#text-area').val();    //gets the value of tweet text
@@ -18,13 +18,13 @@ $(function() {
 
     if (tweetText === '' || tweetText === null ) {  //handles errors for empty tweets
         $('#errorMessage').html('Error! Empty Message!');
-        $('#errorMessage').slideToggle(); //toggle of error message
+        $('#errorMessage').slideDown(); //toggle of error message
 
     } else {
 
         if (tweetText.length > 140) { //handles errors for too long tweets
           $('#errorMessage').html('Tweet too long!');
-          $('#errorMessage').slideToggle(); //toggle of error message
+          $('#errorMessage').slideDown(); //toggle of error message
 
         } else {
           $.ajax('/tweets', { method: 'POST' , data: $(this).serialize()})    //records the tweet in the datatbase
@@ -39,8 +39,9 @@ $(function() {
 
   $('#text-area').on('click',   //current errorMessage hidden once clik occurs in the textarea
     function (event) {
+      console.log("click");
       event.preventDefault();
-      $('#errorMessage').slideToggle();
+      $('#errorMessage').slideUp();
       $('#errorMessage').empty(); //clear error message
   });
 })
