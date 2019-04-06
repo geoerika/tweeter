@@ -1,4 +1,5 @@
-/*nav bar scss*/
+/*nav bar css*/
+
 #nav-bar {
   z-index: 2;
   position: fixed;
@@ -9,14 +10,16 @@
   color: #e8fdff;
   padding-left: 2em;
   padding-right: 2em;
-  /* css styling for "Tweeter" title */
-  /* styling for logo image */
 }
+
+/* css styling for "Tweeter" title */
 #nav-bar .header {
   float: left;
   font-size: 200%;
   line-height: 75px;
 }
+
+/* styling for logo image */
 #nav-bar .logo {
   height: 80px;
   width: 80px;
@@ -24,7 +27,6 @@
   padding-right: 10px;
   margin-left: 15vw;
 }
-
 /* compose button*/
 #compose {
   float: right;
@@ -43,10 +45,10 @@
   font-weight: bold;
   border-color: darkslategray;
   border-width: 1px;
-  /*pseudo-class hover attached to compose button*/
-}
-#compose :hover {
-  background-color: white;
+
 }
 
-/*# sourceMappingURL=nav.css.map */
+/*pseudo-class hover attached to compose button*/
+#compose:hover {
+  background-color: white;
+}
