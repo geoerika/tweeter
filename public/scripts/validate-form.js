@@ -2,15 +2,8 @@
 
 $(function() {
 
-  // $('#text-area').on('click',   //current errorMessage hidden once clik occurs in the textarea
-  //   function (event) {
-  //     event.preventDefault();
-  //     $('#errorMessage').slideToggle();
-  //     $('#errorMessage').empty(); //clear error message
-  // });
-
   $(".tweet-form").on('submit', function (event) {      //submits the new tweet to the database
-console.log("submit");
+    console.log("submit");
     event.preventDefault();       //prevents default "submit" event
 
     tweetText = $('#text-area').val();    //gets the value of tweet text
