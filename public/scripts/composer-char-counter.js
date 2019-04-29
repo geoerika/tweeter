@@ -10,7 +10,7 @@ $(document).ready(function() {
       $('#counter').addClass('redColour'); //colours character count in red if tweet text > 140 characters
     }
     else {
-      $('#counter').removeClass('redColour');  //removes ed colour from character count
+      $('#counter').removeClass('redColour');  //removes red colour from character count
     }
   });
 });

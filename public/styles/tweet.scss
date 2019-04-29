@@ -90,11 +90,10 @@
 
   footer {
     @extend %tweet-shared;
-    float: bottom-center;
-    font-size: 60%;
     margin: 10px 0 0 0;
     border-top-color: lightgray;
     height: 30px;
+    font-size: 80%;
 
     /* time passed since tweet was created */
     #time {
@@ -107,11 +106,16 @@
 
     /* flag, reload and heart icons */
     .icons {
+      display: flex;
+      justify-content: space-between;
       opacity: 0;  /*hides the icons when tweets are shown on the page*/
-      display: inline;
       float: right;
-      margin: 7px 0 0 40px;
-      color: #00a087;
+      color: black;
+      margin: 5px 0 0 0;
+
+      ion-icon {
+        color: #00a087;
+      }
     }
   }
 }
