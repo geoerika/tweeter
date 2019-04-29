@@ -79,11 +79,10 @@
   font-size: 80%;
 }
 .tweet footer {
-  float: bottom-center;
-  font-size: 60%;
   margin: 10px 0 0 0;
   border-top-color: lightgray;
   height: 30px;
+  font-size: 80%;
   /* time passed since tweet was created */
   /* flag, reload and heart icons */
 }
@@ -95,11 +94,15 @@
   font-weight: 2px;
 }
 .tweet footer .icons {
+  display: flex;
+  justify-content: space-between;
   opacity: 0;
   /*hides the icons when tweets are shown on the page*/
-  display: inline;
   float: right;
-  margin: 7px 0 0 40px;
+  color: black;
+  margin: 5px 0 0 0;
+}
+.tweet footer .icons ion-icon {
   color: #00a087;
 }
 
