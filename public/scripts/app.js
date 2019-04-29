@@ -22,7 +22,11 @@ const createTweetElement = (tweet) => {             //creates an html tweet elem
 
   let timeFooter = $(`<span id='time'>${daysAgoCalc(tweet.created_at)} days ago</span>`);  //retrieves time since tweet was created
   // adds icons to the tweet footer
-  let iconFooter = $("<span class='icons'><ion-icon name='flag'></ion-icon> <ion-icon name='repeat'></ion-icon> <ion-icon name='heart'></ion-icon></span>");
+  // let iconFooter = $("<span class='icons'><ion-icon name='flag'></ion-icon> <ion-icon name='repeat'></ion-icon> <ion-icon name='heart'></ion-icon></span>");
+
+  let iconFooter = $(`<span class='icons'> <ion-icon name='heart' size='small'></ion-icon><span id='likes'>&nbsp${tweet.likes}</span></span>`);
+
+  // let likeFooter = $("<span id='likes'>0</span>");
 
   let divFooter = $("<div>").append(timeFooter, iconFooter); //creates the footer
 
