@@ -3,7 +3,6 @@
 $(function() {
 
   $(".tweet-form").on('submit', function (event) {      //submits the new tweet to the database
-    console.log("submit");
     event.preventDefault();       //prevents default "submit" event
 
     tweetText = $('#text-area').val();    //gets the value of tweet text
@@ -32,7 +31,6 @@ $(function() {
 
   $('#text-area').on('click',   //current errorMessage hidden once clik occurs in the textarea
     function (event) {
-      console.log("click");
       event.preventDefault();
       $('#errorMessage').slideUp();
       $('#errorMessage').empty(); //clear error message
