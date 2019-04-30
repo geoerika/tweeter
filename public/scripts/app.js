@@ -10,7 +10,7 @@ const createTweetElement = (tweet) => {             //creates an html tweet elem
   let $tweet = $("<article>").addClass("tweet");
 
   let avatar = $(`<img src="${tweet.user.avatars.small}"></img>`);   //selects avatar image
-  let h2Header = $(`<h2 class='userName' >${tweet.user.name}</h2>`);  //selects user name
+  let h2Header = $(`<h2 class='userName' name='user'>${tweet.user.name}</h2>`);  //selects user name
   let spanHeader = $(`<span>${tweet.user.handle}</span>`);  //selects user handle
 
   let header = $("<header>").append(avatar, h2Header, spanHeader); //creates the header
@@ -20,11 +20,11 @@ const createTweetElement = (tweet) => {             //creates an html tweet elem
 
   let divTweet = $("<div>").append(tweetDiv);  //adds elements to div for displaying tweet text
 
-  let timeFooter = $(`<span id='time'>${daysAgoCalc(tweet.created_at)} days ago</span>`);  //retrieves time since tweet was created
+  let timeFooter = $(`<span id='time' name='time'>${daysAgoCalc(tweet.created_at)} days ago</span>`);  //retrieves time since tweet was created
   // adds icons to the tweet footer
   // let iconFooter = $("<span class='icons'><ion-icon name='flag'></ion-icon> <ion-icon name='repeat'></ion-icon> <ion-icon name='heart'></ion-icon></span>");
 
-  let iconFooter = $(`<span class='icons'> <ion-icon name='heart' size='small'></ion-icon><span id='likes'>&nbsp${tweet.likes}</span></span>`);
+  let iconFooter = $(`<span class="icons"> <ion-icon class='heart'name='heart' size='small'></ion-icon>&nbsp<span id='likes' name='likes'>${tweet.likes}</span></span>`);
 
   // let likeFooter = $("<span id='likes'>0</span>");
 
