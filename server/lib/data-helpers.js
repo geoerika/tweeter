@@ -18,16 +18,26 @@ module.exports = function makeDataHelpers(db) {
         callback(null, true);
     },
 
-    // Get all tweets in `db`, sorted by newest first
+    // Get all tweets in `db`
     getTweets: function(callback) {
       db.collection('tweets').find().toArray((err, tweets) => {
         if (err) {
           return callback(err);
         }
         callback(null, tweets);
-          // const sortNewestFirst = (a, b) => a.created_at - b.created_at;
-          // callback(null, tweets.sort(sortNewestFirst));
       })
+    },
+
+    updateLikes: function(data, callback) {  //updates likes for a tweet in the database
+      try {
+        db.collection('tweets').updateOne(
+          {"user.name": data.user, "content.text": data.text},
+          { $set: {"likes": data.likes}}
+        );
+      } catch (err) {
+        return callback(err);
+      };
+      callback(null, true);
     }
   }
 }
