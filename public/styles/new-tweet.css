@@ -23,14 +23,14 @@
   font-weight: bold;
   font-size: 120%;
   color: darkslategray;
-  width: 348px;
+  width: 95%;
   border-bottom-color: darkslategray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 .new-tweet textarea {
   align-content: center;
-  width: 346px;
+  width: 95%;
   float: center;
   margin-right: 10px;
 }
@@ -55,6 +55,16 @@
 }
 .new-tweet .redColour {
   color: red;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+  .new-tweet textarea {
+    width: 97%;
+  }
+
+  .new-tweet h2 {
+    width: 97%;
+  }
 }
 
 /*# sourceMappingURL=new-tweet.css.map */

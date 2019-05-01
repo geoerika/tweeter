@@ -24,3 +24,9 @@ body {
   color: #244751;
   background-color: #eee;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+  .container {
+    width: 75%;
+  }
+}
