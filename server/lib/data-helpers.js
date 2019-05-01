@@ -28,16 +28,16 @@ module.exports = function makeDataHelpers(db) {
       })
     },
 
-    updateLikes: function(data, callback) {  //updates likes for a tweet in the database
+    //updates likes for a tweet in the database
+    updateLikes: function(data, callback) {
       try {
         db.collection('tweets').updateOne(
           {"user.name": data.user, "content.text": data.text},
           { $set: {"likes": data.likes}}
         );
       } catch (err) {
-        return callback(err);
+        callback(err);
       };
-      callback(null, true);
     }
   }
 }
