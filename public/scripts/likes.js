@@ -21,6 +21,6 @@ $(document).ready(function() {
     tweet.find('#likes').text(likes);
     likes = tweet.find('#likes').text();
 
-    $.ajax('/tweets', { method: 'POST', data: {user:user, text:text, likes:likes}});   //updates the tweet likes in the datatbase
+    $.ajax('/tweets', { method: 'PUT', data: {user:user, text:text, likes:likes}});   //updates the tweet likes in the datatbase
   })
 });
