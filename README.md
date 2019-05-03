@@ -7,8 +7,11 @@ Tweets are stored in MongoDB and survive a server restart.
 Also hosted here: https://frozen-journey-42511.herokuapp.com/
 
 ## Final Product
+
+### Composing a tweet, showing an error if it is too long
 !["Screenshot of Tweeter Compose page"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-compose-too-long.png)
 
+### Tweets can be liked; number of likes are stored with the tweets in the database
 !["Screenshot of Tweeter with Likes mode"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-likes.png)
 
 ## Dependencies
