@@ -7,9 +7,9 @@ Tweets are stored in MongoDB and survive a server restart.
 Also hosted here: https://frozen-journey-42511.herokuapp.com/
 
 ## Final Product
-!["Screenshot of Tweeter main page"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-main.png)
+!["Screenshot of Tweeter Compose page"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-compose-too-long.png)
 
-!["Screenshot of Tweeter in Compose mode"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-compose.png)
+!["Screenshot of Tweeter with Likes mode"](https://github.com/geoerika/tweeter/blob/master/docs/tweeter-likes.png)
 
 ## Dependencies
 
